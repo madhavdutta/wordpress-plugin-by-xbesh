@@ -1,0 +1,51 @@
+/* xBesh Tooltip Styles */
+.xbesh-tooltip {
+  position: fixed;
+  bottom: 20px;
+  z-index: 9999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+.xbesh-tooltip-left {
+  left: 20px;
+}
+
+.xbesh-tooltip-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.xbesh-tooltip-right {
+  right: 20px;
+}
+
+.xbesh-tooltip-text {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.xbesh-tooltip-text:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .xbesh-tooltip {
+    bottom: 10px;
+    font-size: 12px;
+  }
+  
+  .xbesh-tooltip-left {
+    left: 10px;
+  }
+  
+  .xbesh-tooltip-right {
+    right: 10px;
+  }
+}
